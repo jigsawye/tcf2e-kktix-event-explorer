@@ -42,7 +42,7 @@ export default class Explorer extends Component {
         <div className="card text-center">
           <div className="card-block">
             <h4 className="card-title">{event.title}</h4>
-            <p className="card-text">{event.summary}</p>
+            <p className="card-text">{event.summary.substr(0, 50)}...</p>
             <a href={event.url} target="_blank" className="btn btn-primary">Event page</a>
           </div>
         </div>
